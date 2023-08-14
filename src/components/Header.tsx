@@ -1,8 +1,10 @@
 import { MdDarkMode } from "react-icons/md";
 import { FiMenu, FiSun} from "react-icons/fi";
+import { useTheme } from "../hooks/useTheme";
 
 
 export const Header = () => {
+    const { theme, setTheme } = useTheme();
 
     return (
         <header className="flex justify-between max-w-5xl m-auto items-center bg-transparent">
@@ -18,8 +20,8 @@ export const Header = () => {
                     <li>Contato</li>
                 </ul>
                 <div>
-                    <FiSun className="block dark:hidden"/>
-                    <MdDarkMode className="hidden dark:block" />
+                    <FiSun className="cursor-pointer hidden text-white dark:block" onClick={()=>setTheme("dark")}/>
+                    <MdDarkMode className="cursor-pointer block text-black dark:hidden" onClick={()=>setTheme("light")}/>
                 </div>
             </nav>
             <div className="block sm:hidden"><FiMenu /></div>
