@@ -12,7 +12,7 @@ export const Header = () => {
                 <img src="/assets/logo" alt="logo" />
             </div>
             <nav className="flex flex-row gap-8 items-center">
-                <ul className="flex gap-8 text-orange-500 font-semibold">
+                <ul className="flex gap-8 text-yellow-500 font-semibold">
                     <li>Home</li>
                     <li>Sobre</li>
                     <li>Projetos</li>
