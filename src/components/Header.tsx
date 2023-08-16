@@ -1,10 +1,10 @@
 import { MdDarkMode } from "react-icons/md";
 import { FiMenu, FiSun} from "react-icons/fi";
 import { useTheme } from "../hooks/useTheme";
-
+import { Link } from   "react-scroll";
 
 export const Header = () => {
-    const { theme, setTheme } = useTheme();
+    const { setTheme } = useTheme();
 
     return (
         <header className="flex justify-between max-w-5xl m-auto items-center bg-transparent">
@@ -13,11 +13,21 @@ export const Header = () => {
             </div>
             <nav className="flex flex-row gap-8 items-center">
                 <ul className="flex gap-8 text-yellow-500 font-semibold">
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Projetos</li>
-                    <li>Habilidades</li>
-                    <li>Contato</li>
+                    <li>
+                        <Link to="presentation" smooth={true} duration={500}>Home</Link>
+                    </li>
+                    <li>
+                        <Link to="sobre" smooth={true} duration={500}>Sobre</Link>
+                    </li>
+                    <li>
+                        <Link to="projects" smooth={true} duration={500}>Projetos</Link>
+                    </li>
+                    <li>
+                        <Link to="habilidades" smooth={true} duration={500}>Habilidades</Link>
+                    </li>
+                    <li>
+                        <Link to="contato" smooth={true} duration={500}>Contato</Link>
+                    </li>
                 </ul>
                 <div>
                     <FiSun className="cursor-pointer hidden text-white dark:block" onClick={()=>setTheme("dark")}/>
