@@ -40,7 +40,7 @@ export const Header = () => {
                     <MdDarkMode className="w-[28px] h-[28px] cursor-pointer block text-black dark:hidden" onClick={()=>setTheme("light")}/>
                 </div>
                 {isMenuOpen &&
-                    <div className="w-screen h-screen bg-black opacity-75 fixed top-0 right-0 flex items-center justify-center ">
+                    <div className=" bg-black opacity-75 fixed top-1/2 translate-y-0.5 right-0 flex items-center justify-center ">
                         <ul className="gap-8 text-themecolor-500 font-semibold flex flex-col">
                             <li>
                                 <Link to="presentation" smooth={true} duration={500}>Home</Link>
@@ -61,8 +61,8 @@ export const Header = () => {
                     </div>
                 }
                 
+                <div className="block  top-1/2 md:hidden"><FiMenu className="w-[28px] h-[28px] cursor-pointer" onClick={toggleMenu}/></div>
             </nav>
-            <div className="block md:hidden"><FiMenu className="w-[28px] h-[28px] cursor-pointer" onClick={toggleMenu}/></div>
         </header>
     );
 }
