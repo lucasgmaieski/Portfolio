@@ -11,7 +11,7 @@ function App() {
     <main className="h-screen w-full bg-primarylight text-black dark:bg-primarydark dark:text-white relative">
       <Header />
       
-      <h1 className="text-5xl font-bold underline bg-orange-600">
+      <h1 className="text-5xl font-bold underline">
         Hello world!
       </h1>
 
