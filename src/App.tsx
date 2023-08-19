@@ -8,19 +8,19 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main className="h-screen w-full bg-primarylight text-black dark:bg-primarydark dark:text-white relative">
+    <div className="h-screen w-full bg-primarylight text-black dark:bg-primarydark dark:text-white relative">
       <Header />
       
-      <h1 className="text-5xl font-bold underline">
-        Hello world!
-      </h1>
-
-      <Presentation />
-
-      <Projects />
-      <Projects />
+      <main className="h-full pt-24">
+        <h1 className="text-5xl font-bold underline">
+          Hello world!
+        </h1>
+        <Presentation />
+        <Projects />
+        <Projects />
+      </main>
       
-    </main>
+    </div>
   )
 }
 
