@@ -11,12 +11,12 @@ export const Contact = () => {
             <p>Tem um desáfio para mim? Fique a vontade para me enviar uma mensagem</p>
             <div className="">
                 <form>
-                    <div>
-                        <div className="max-w-xs">
-                            <img src="./src/assets/reactjs.svg" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
+                    <label htmlFor="name">
+                        Nome*:
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Digite seu nome"/>
                         </div>
-                        <h3>React</h3>
-                    </div>
+                    </label>
                 </form>
                 <div>
                     <div>
