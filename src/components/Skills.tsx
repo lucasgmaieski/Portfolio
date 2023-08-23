@@ -10,7 +10,7 @@ export const Skills = () => {
             <div className="grid">
                 <div>
                     <div>
-                        <div className="max-w-xs">
+                        <div className="max-w-[130px]">
                             <img src="./src/assets/reactjs.svg" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
                         </div>
                         <h3>React</h3>

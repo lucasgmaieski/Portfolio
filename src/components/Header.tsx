@@ -67,7 +67,7 @@ export const Header = () => {
                         </ul>
                     </div>
                 
-                    <div className="block top-1/2 md:hidden"><FiMenu className="w-[32px] h-[32px] stroke-[3px] cursor-pointer text-black dark:text-white hover:text-themecolor-500 bg-gradient-to from-themecolor-500 via-themecolor-500/50 to-themecolor-500/10" onClick={toggleMenu} tabIndex={0}/></div>
+                    <div className="block top-1/2 md:hidden"><FiMenu className="w-[32px] h-[32px] stroke-[3px] cursor-pointer text-black dark:text-white hover:text-themecolor-500 bg-gradient-to from-themecolor-500 via-themecolor-500/50 to-themecolor-500/10 focus:border-none focus:outline-none" onClick={toggleMenu} tabIndex={0}/></div>
                 </nav>
             </div>
         </header>
