@@ -1,8 +1,46 @@
 import { Link } from "react-scroll";
 import { ListSkills } from "../data/ListSkills";
+import { SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs, SiStyledcomponents, SiBootstrap, SiSass, SiHtml5, SiCss3, SiFirebase, SiGit, SiWordpress, SiPhp, SiFigma } from "react-icons/si"
+import { FaReact } from "react-icons/fa"
 
 
 export const Skills = () => {
+    const renderIcon = (iconName: string) => {
+        switch (iconName) {
+            case 'FaReact':
+              return <FaReact className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl" />;
+            case 'SiJavascript':
+              return <SiJavascript className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiTailwindcss':
+              return <SiTailwindcss className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiTypescript':
+              return <SiTypescript className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiNextdotjs':
+              return <SiNextdotjs className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiStyledcomponents':
+              return <SiStyledcomponents className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiBootstrap':
+              return <SiBootstrap className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiSass':
+              return <SiSass className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiHtml5':
+              return <SiHtml5 className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiCss3':
+              return <SiCss3 className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiFirebase':
+              return <SiFirebase className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiGit':
+              return <SiGit className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiWordpress':
+              return <SiWordpress className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiPhp':
+              return <SiPhp className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiFigma':
+              return <SiFigma className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            default:
+              return null;
+          }
+    }
     return (
         <section className="mb-10 mx-2 md:mb-20" id="skills">
             <div>
@@ -14,7 +52,8 @@ export const Skills = () => {
                         <div className="flex flex-col items-center justify-center bg-primarylight dark:bg-primarydark m-[2px]  aspect-[3/5]">
                             <div className="pt-4 flex flex-col items-center justify-center">
                                 <div className="max-w-full p-2 ">
-                                    <img src={item.path} alt="Imagem do desenvolvedor Lucas Maieski" className="w-full -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5"/>
+                                    {/* <img src={item.path} alt="Imagem do desenvolvedor Lucas Maieski" className="w-full -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5"/> */}
+                                    {renderIcon(item.icon)}
                                 </div>
                                 <h3 className="opacity-0 group-hover:opacity-100 duration-700 transition text-center leading-4 sm:leading-3 sm:text-sm max-[450px]:text-xs">{item.name}</h3>
                             </div>
@@ -23,5 +62,6 @@ export const Skills = () => {
                 ))}
             </div>
         </section>
+        
     );
 }
