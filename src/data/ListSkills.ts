@@ -1,63 +1,63 @@
 export const ListSkills = [
     {
         name: 'React',
-        path: '/src/assets/reactjs.svg'
+        icon: 'FaReact'
     },
     {
         name: 'Typescript',
-        path: '/src/assets/typescript.png'
+        icon: 'SiTypescript'
     },
     {
         name: 'Next Js',
-        path: '/src/assets/nextjs.svg'
+        icon: 'SiNextdotjs'
     },
     {
-        name: 'Styled-Components',
-        path: '/src/assets/styled-components.svg'
+        name: 'Styled Components',
+        icon: 'SiStyledcomponents'
     },
     {
         name: 'Tailwindcss',
-        path: '/src/assets/tailwindcss.svg'
+        icon: 'SiTailwindcss'
     },
     {
         name: 'Bootstrap',
-        path: '/src/assets/bootstrap.svg'
+        icon: 'SiBootstrap'
     },
     {
         name: 'Sass',
-        path: '/src/assets/sass.svg'
+        icon: 'SiSass'
     },
     {
         name: 'Firebase',
-        path: '/src/assets/firebase.svg'
+        icon: 'SiFirebase'
     },
     {
         name: 'HTML',
-        path: '/src/assets/html.svg'
+        icon: 'SiHtml5'
     },
     {
         name: 'CSS',
-        path: '/src/assets/css.svg'
+        icon: 'SiCss3'
     },
     {
         name: 'Javascript',
-        path: '/src/assets/javascript.png'
+        icon: 'SiJavascript'
     },
     {
         name: 'Git',
-        path: '/src/assets/git.svg'
+        icon: 'SiGit'
     },
     {
         name: 'WordPress',
-        path: '/src/assets/wordpress.svg'
+        icon: 'SiWordpress'
     },
     {
         name: 'PHP',
-        path: '/src/assets/php.png'
+        icon: 'SiPhp'
     },
     {
         name: 'Figma',
-        path: '/src/assets/figma.svg'
+        icon: 'SiFigma'
     },
     
 ]
