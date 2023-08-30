@@ -24,19 +24,19 @@ export const Header = () => {
                 <nav className="flex flex-row gap-8 items-center">
                     <ul className="gap-8 text-black  dark:text-white font-semibold hidden md:flex">
                         <li className="hover:text-themecolor-500">
-                            <Link to="presentation" smooth={true} duration={1000} className="cursor-pointer" tabIndex={0}>Home</Link>
+                            <Link to="presentation" smooth={true} duration={1000} offset={-120} className="cursor-pointer" tabIndex={0}>Home</Link>
                         </li>
                         <li className="hover:text-themecolor-500">
-                            <Link to="sobre" smooth={true} duration={1000} className="cursor-pointer" tabIndex={0}>Sobre</Link>
+                            <Link to="about" smooth={true} duration={1000} offset={-100} className="cursor-pointer" tabIndex={0}>Sobre</Link>
                         </li>
                         <li className="hover:text-themecolor-500">
-                            <Link to="projects" smooth={true} duration={1000} className="cursor-pointer" tabIndex={0}>Projetos</Link>
+                            <Link to="projects" smooth={true} duration={1000} offset={-100} className="cursor-pointer" tabIndex={0}>Projetos</Link>
                         </li>
                         <li className="hover:text-themecolor-500">
-                            <Link to="habilidades" smooth={true} duration={1000} className="cursor-pointer" tabIndex={0}>Habilidades</Link>
+                            <Link to="skills" smooth={true} duration={1000} offset={-100} className="cursor-pointer" tabIndex={0}>Habilidades</Link>
                         </li>
                         <li className="hover:text-themecolor-500">
-                            <Link to="contato" smooth={true} duration={1000} className="cursor-pointer" tabIndex={0}>Contato</Link>
+                            <Link to="contact" smooth={true} duration={1000} offset={-100} className="cursor-pointer" tabIndex={0}>Contato</Link>
                         </li>
                     </ul>
                     <div>
@@ -47,22 +47,22 @@ export const Header = () => {
                     <div className= {`bg-gradient-to-r from-themecolor-500 via-themecolor-500/50 to-themecolor-500/10 fixed top-1/2 -translate-y-1/2 md:hidden flex items-center justify-center ${isMenuOpen ? 'right-0' : '-right-11'}`} >
                         <ul className={`text-themecolor-500 font-semibold flex flex-col my-1 bg-primarylight/80 dark:bg-primarydark/80 ${isMenuOpen ? 'ml-1' : 'ml-2'}`}>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400" title="Home">
-                                <Link to="presentation" smooth={true} duration={1000} tabIndex={0}><AiFillHome className="w-[28px] h-[28px] mx-2 my-1"/> </Link>
+                                <Link to="presentation" smooth={true} duration={1000} offset={-120} tabIndex={0}><AiFillHome className="w-[28px] h-[28px] mx-2 my-1"/> </Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="sobre" smooth={true} duration={1000} tabIndex={0}><BsFillPersonLinesFill className="w-[28px] h-[28px] mx-2 my-1"/></Link>
+                                <Link to="about" smooth={true} duration={1000} offset={-100} tabIndex={0}><BsFillPersonLinesFill className="w-[28px] h-[28px] mx-2 my-1"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="projects" smooth={true} duration={1000} tabIndex={0}><PiProjectorScreenChartDuotone className="w-[28px] h-[28px] mx-2 my-1"/></Link>
+                                <Link to="projects" smooth={true} duration={1000} offset={-100} tabIndex={0}><PiProjectorScreenChartDuotone className="w-[28px] h-[28px] mx-2 my-1"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="habilidades" smooth={true} duration={1000} tabIndex={0}><PiListChecksBold className="w-[28px] h-[28px] mx-2 my-1"/></Link>
+                                <Link to="skills" smooth={true} duration={1000} offset={-100} tabIndex={0}><PiListChecksBold className="w-[28px] h-[28px] mx-2 my-1"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="contato" smooth={true} duration={1000} tabIndex={0}><MdEmail className="w-[28px] h-[28px] mx-2 my-1"/></Link>
+                                <Link to="contact" smooth={true} duration={1000} offset={-100} tabIndex={0}><MdEmail className="w-[28px] h-[28px] mx-2 my-1"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="topo" smooth={true} duration={1000} tabIndex={0}><BsArrowUpCircle className="w-[28px] h-[28px] mx-2 my-1"/></Link>
+                                <Link to="topo" smooth={true} duration={1000} offset={-100} tabIndex={0}><BsArrowUpCircle className="w-[28px] h-[28px] mx-2 my-1"/></Link>
                             </li>
                         </ul>
                     </div>

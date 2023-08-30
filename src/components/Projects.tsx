@@ -4,11 +4,11 @@ import { Button } from "./Button";
 
 export const Projects = () => {
     return (
-        <section className="mb-10 mx-2 md:mb-20" id="projects">
+        <section className="mb-10 mx-2 md:mb-20 z-10 relative" id="projects">
             <div>
                 <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor-500/0 via-themecolor-500 to-themecolor-500/0 before:-bottom-1.5 before:left-0">Projetos</h2>
             </div>
-            <div className="flex gap-8 mt-10 px-1 items-center flex-col">
+            <div className="flex gap-8 mt-10 px-1 items-center flex-col z-10 relative">
                 <div className="group bg-gradient-to-t from-themecolor-500 from-0% via-themecolor-500/50 via-25% to-themecolor-500/0 to-55%  sm:bg-gradient-to-l">
                     <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                         <div className="max-w-full sm:max-w-[50%] group-hover:shadow-[rgba(234,_179,_8,_0.5)_0px_-5px_26px] sm:group-hover:shadow-[rgba(234,_179,_8,_0.5)_-5px_0px_26px] group-hover:scale-105 transition duration-500">
@@ -55,6 +55,9 @@ export const Projects = () => {
                     </div>
                 </div>
             </div>
+            <div className="fixed text-themecolor-500/10 text-8xl left-10 top-1/2 z-[0]">
+          &lt; / &gt;
+        </div>
         </section>
     );
 }
