@@ -5,9 +5,9 @@ import Typewriter from "typewriter-effect";
 
 export const Presentation = () => {
     return (
-        <section className="my-16 mx-2 flex gap-8 items-center flex-col md:flex-row mb:my-20" id="presentation">
+        <section className="my-16 mx-2 flex gap-8 items-center flex-col md:flex-row mb:my-20 z-10 relative" id="presentation">
             <div className="md:w-3/5">
-                <h1 className="text-themecolor-500 font-extrabold flex flex-col gap-2 ">
+                <h1 className="text-themecolor font-extrabold flex flex-col gap-2 ">
                     <span className="block text-2xl sm:text-2xl md:text-3xl text-black dark:text-white font-normal">Olá! aqui é o </span> 
                     <span className="block text-4xl sm:text-5xl md:text-6xl">Lucas Maieski </span>
                     <span className="block text-2xl sm:text-2xl md:text-3xl font-semibold">

@@ -2,53 +2,54 @@ import { Link } from "react-scroll";
 import { ListSkills } from "../data/ListSkills";
 import { SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs, SiStyledcomponents, SiBootstrap, SiSass, SiHtml5, SiCss3, SiFirebase, SiGit, SiWordpress, SiPhp, SiFigma } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
+import { PiListChecksBold } from "react-icons/pi";
 
 
 export const Skills = () => {
     const renderIcon = (iconName: string) => {
         switch (iconName) {
             case 'FaReact':
-              return <FaReact className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl" />;
+              return <FaReact className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl" />;
             case 'SiJavascript':
-              return <SiJavascript className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiJavascript className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiTailwindcss':
-              return <SiTailwindcss className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiTailwindcss className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiTypescript':
-              return <SiTypescript className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiTypescript className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiNextdotjs':
-              return <SiNextdotjs className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiNextdotjs className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiStyledcomponents':
-              return <SiStyledcomponents className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiStyledcomponents className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiBootstrap':
-              return <SiBootstrap className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiBootstrap className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiSass':
-              return <SiSass className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiSass className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiHtml5':
-              return <SiHtml5 className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiHtml5 className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiCss3':
-              return <SiCss3 className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiCss3 className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiFirebase':
-              return <SiFirebase className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiFirebase className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiGit':
-              return <SiGit className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiGit className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiWordpress':
-              return <SiWordpress className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiWordpress className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiPhp':
-              return <SiPhp className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiPhp className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiFigma':
-              return <SiFigma className="text-themecolor-500 text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+              return <SiFigma className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             default:
               return null;
           }
     }
     return (
-        <section className="mb-10 mx-2 md:mb-20" id="skills">
+        <section className="mb-10 mx-2 md:mb-20 z-10 relative" id="skills">
             <div>
-                <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor-500/0 via-themecolor-500 to-themecolor-500/0 before:-bottom-1.5 before:left-0">Habilidades</h2>
+                <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Habilidades</h2>
             </div>
-            <div className="mt-7 px-1 grid grid-cols-4 grid-flow-row gap-4 sm:grid-cols-7 max-[450px]:gap-2 max-[450px]:grid-cols-3">
+            <div className="mt-7 px-1 grid grid-cols-4 grid-flow-row gap-4 sm:grid-cols-7 max-[450px]:gap-2 max-[450px]:grid-cols-3 relative z-10">
                 { ListSkills.map((item, key)=>(
-                    <div key={key} className="group bg-gradient-to-t from-themecolor-500 from-0% via-themecolor-500/40 via-25%  to-themecolor-500/0 to-80% overflow-visible">
+                    <div key={key} className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/40 via-25%  to-themecolor/0 to-80% overflow-visible">
                         <div className="flex flex-col items-center justify-center bg-primarylight dark:bg-primarydark m-[2px]  aspect-[3/5]">
                             <div className="pt-4 flex flex-col items-center justify-center">
                                 <div className="max-w-full p-2 ">
@@ -60,6 +61,9 @@ export const Skills = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="absolute text-themecolor/10 text-8xl -left-[20vw] top-[50%] -translate-y-1/2 z-[0] flex items-center">
+                <PiListChecksBold className="w-[20vw] h-[20vw] mx-2 my-1"/>
             </div>
         </section>
         
