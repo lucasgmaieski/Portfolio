@@ -1,8 +1,10 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
 
 type ThemeContextType = {
-    theme: string;
+    theme: string ;
     setTheme: React.Dispatch<React.SetStateAction<string>>;
+    themeColor: string | null;
+    setThemeColor: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -10,6 +12,9 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export default function ThemeContextProvider ({children}: React.PropsWithChildren) {
     const [theme, setTheme] = useState(
         localStorage.getItem("theme") != "dark" ? "light" : "dark"
+    );
+    const [themeColor, setThemeColor] = useState(
+        localStorage.getItem("themeColor") == "" || null ? "default" : localStorage.getItem("themeColor")
     );
 
     useEffect(()=> {
@@ -22,9 +27,12 @@ export default function ThemeContextProvider ({children}: React.PropsWithChildre
 
         localStorage.setItem("theme", theme);
     }, [theme]);
+    useEffect(()=> {
+
+    }, [themeColor]);
 
     return (
-        <ThemeContext.Provider value={{theme, setTheme}}>
+        <ThemeContext.Provider value={{theme, setTheme, themeColor, setThemeColor}}>
             {children}
         </ThemeContext.Provider>
     );

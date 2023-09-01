@@ -7,7 +7,9 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Link } from "react-scroll";
-import { BsArrowUpCircle } from "react-icons/bs";
+import { BsArrowUpCircle, BsFillPersonLinesFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import { PiListChecksBold, PiProjectorScreenChartDuotone } from "react-icons/pi";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,7 +41,7 @@ function App() {
         <Skills />
         <Contact />
         {isVisible && 
-          <Link to="topo" smooth={true} duration={1000} spy={true} spyThrottle={500} offset={-70} tabIndex={0} className=""><BsArrowUpCircle className="fixed bottom-6 text-themecolor-500 right-3 w-[36px] h-[36px] mx-2 my-1 rounded-full bg-primarylight dark:bg-primarydark shadow-primarydark dark:shadow-primarylight animate-bounce hidden md:block"/></Link>
+          <Link to="topo" smooth={true} duration={1000} spy={true} spyThrottle={500} offset={-70} tabIndex={0} className=""><BsArrowUpCircle className="fixed bottom-6 text-themecolor right-3 w-[36px] h-[36px] mx-2 my-1 rounded-full bg-primarylight dark:bg-primarydark shadow-primarydark dark:shadow-primarylight animate-bounce hidden md:block cursor-pointer"/></Link>
         }
         
       </main>

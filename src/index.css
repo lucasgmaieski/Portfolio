@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html[data-theme='default'] {
+    --theme-color: 234,179,8;
+  }
+
+  html[data-theme='green'] {
+    --theme-color: 0,173,111;
+  }
+
+  html[data-theme='blue'] {
+    --theme-color: 0,131,255;
+  }
+
+  html[data-theme='red'] {
+    --theme-color: 239,68,68;
+  }
+
+  html[data-theme='violet'] {
+    --theme-color: 139,92,246;
+  }
+}
