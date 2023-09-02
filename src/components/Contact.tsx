@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
+import { ImSpinner2 } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import React, { useEffect, useState } from "react";
 import { Button } from "./Button";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOpacity } from "react-icons/md";
+import { db } from "../services/firebaseConfig";
+import { collection, doc, setDoc, Timestamp } from "firebase/firestore"; 
+
 
 const schema = z.object({
     name: z.string().min( 3, {message: 'Nome inválido'}),
@@ -16,30 +20,37 @@ const schema = z.object({
 type FormProps = z.infer<typeof schema>;
 
 export const Contact = () => {
-    const [sendFormSucess, setSendFormSucess] = useState(true);
+    const [sendFormSucess, setSendFormSucess] = useState(false);
+    const [sendFormError, setSendFormError] = useState(false);
+    const [sendingForm, setSendingForm] = useState(false);
 
     const { handleSubmit, register, reset, formState: { errors} } = useForm<FormProps>({mode: 'all', reValidateMode: 'onChange', resolver: zodResolver(schema)});
     const handleForm = async (data: FormProps) => {
+        setSendingForm(true);
         console.log("ta entrando aqui e mostrando os dados: " + data.name + data.email + data.message);
-        // colocar um a no final da url
-        fetch("https://getform.io/f/da934868-03a1-4319-8147-8b048af4516", {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json' 
-            },
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`An error occurred: ${response.statusText}`);
-            } else {
+        
+        const dateSend =  Timestamp.fromDate(new Date());
+
+        try {
+            const messagesCollectionRef = collection(db, 'caixaDeEntrada');
+            const dataAtual = new Date(); // Obtém a data e hora atual
+            const nomeDocumento = `${data.name}_${dataAtual.getFullYear()}_${(dataAtual.getMonth() + 1).toString().padStart(2, '0')}_${dataAtual.getDate().toString().padStart(2, '0')}_${dataAtual.getHours().toString().padStart(2, '0')}_${dataAtual.getMinutes().toString().padStart(2, '0')}_${dataAtual.getSeconds().toString().padStart(2, '0')}`;
+            const newMessageData = { name: data.name, email: data.email, message: data.message, date: dateSend };
+            
+            const customDocumentRef = doc(messagesCollectionRef, nomeDocumento);
+            await setDoc(customDocumentRef, newMessageData);
+            setTimeout(() => {
+                setSendingForm(false);
                 setSendFormSucess(true);
-            }
-            console.log(response);
-        })
-        .catch(error => {
-            console.log(error);
-        });
+            }, 2000);
+        } catch (error) {
+            console.log('deu erro' + error);
+            setTimeout(() => {
+                setSendingForm(false);
+                setSendFormError(true);
+            }, 2000);
+        }
+        
     }
     useEffect(()=> {
         reset();
@@ -47,6 +58,7 @@ export const Contact = () => {
 
     const handleInputChange = () => {
         setSendFormSucess(false);
+        setSendFormError(false);
     }
 
     return (
@@ -56,7 +68,7 @@ export const Contact = () => {
             </div>
             <p className="text-center my-5">Tem um desáfio para mim? Fique a vontade para me enviar uma mensagem</p>
             <div className="flex gap-8 px-1 items-start flex-col md:flex-row relative z-10">
-                <form onSubmit={handleSubmit(handleForm)} className="w-full md:w-1/2 flex flex-col gap-2">
+                <form onSubmit={handleSubmit(handleForm)} className={`w-full md:w-1/2 flex flex-col gap-2 relative `}>
                     <label htmlFor="name">
                         Nome*:
                         <div className="bg-gradient-to-r from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-95%">
@@ -85,9 +97,16 @@ export const Contact = () => {
                         )}
                     </label>
 
-                    <div className="overflow-hidden mt-5 m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-full before:bg-themecolor before:top-0 before:-left-28 hover:before:translate-x-28 before:duration-200 before:transition-transform">
-                        <input type="submit" value="Enviar" className="m-auto relative border-2 border-themecolor py-2 px-8 hover:shadow-[rgba(234,_179,_8,_0.3)_0px_0px_16px] font-semibold"/>
+                    <div className={`overflow-hidden mt-5 m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-full before:bg-themecolor before:top-0 before:-left-40 ${sendingForm ? 'pointer-events-none' : 'hover:before:translate-x-40'} before:duration-200 before:transition-transform`}>
+                        <button type="submit" className={`flex items-center gap-2 m-auto relative border-2 border-themecolor py-2  hover:shadow-[rgba(234,_179,_8,_0.3)_0px_0px_16px] font-semibold ${sendingForm ? 'px-2' : 'px-8'}`}>
+                            {sendingForm && <ImSpinner2 className="animate-spin text-themecolor" size={24}/>}
+                            {sendingForm ? 'Enviando...' : 'Enviar'}
+                        </button>
                     </div>
+                    
+                    {sendFormError && 
+                        <p className="text-lg text-center text-red-500">Falha ao enviar mensagem, tente novamente!</p>
+                    }
                     {sendFormSucess && 
                         <p className="text-lg text-center text-green-500">Obrigado por enviar sua mensagem!</p>
                     }
@@ -99,9 +118,6 @@ export const Contact = () => {
                     <Link to={'https://wa.me/5546991333202'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><BsWhatsapp className="text-themecolor text-4xl p-[2px]"/> (46) 99133 3202</Link>
                 </div>
             </div>
-            {/* <div className="absolute text-themecolor/5 text-8xl -left-[10%] top-1/2 -translate-y-1/2 z-[0] flex items-center">
-                <MdEmail className="w-[20vw] h-[20vw] mx-2 my-1"/> Contato
-            </div> */}
             <div className="absolute text-themecolor/10 text-8xl -left-[20vw] top-[50%] -translate-y-1/2 z-[0] flex items-center">
                 <MdEmail className="w-[20vw] h-[20vw] mx-2 my-1"/>
             </div>
