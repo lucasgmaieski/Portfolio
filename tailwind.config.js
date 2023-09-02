@@ -13,7 +13,7 @@ export default {
         primarydark: '#171717',
         secondarydark: '#272727',
         themecolor: 'rgb(var(--theme-color), <alpha-value>)',
-        primarylight: '#fafafa',
+        primarylight: '#fafaf9',
         secondarylight: '#dadada'
       },
       dropShadow: {

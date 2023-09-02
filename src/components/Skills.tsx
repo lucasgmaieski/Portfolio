@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import { ListSkills } from "../data/ListSkills";
 import { SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs, SiStyledcomponents, SiBootstrap, SiSass, SiHtml5, SiCss3, SiFirebase, SiGit, SiWordpress, SiPhp, SiFigma } from "react-icons/si"
 import { FaReact } from "react-icons/fa"

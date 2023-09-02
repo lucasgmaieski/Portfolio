@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { PiProjectorScreenChartDuotone } from "react-icons/pi";
 
@@ -30,9 +29,9 @@ export const Projects = () => {
                         <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500 sm:order-2">
                             <img src="./src/assets/portfolio-lucas-preview.png" alt="Preview projeto Amper Foods" />
                         </div>
-                        <div className="max-w-full sm:max-w-[50%] h-full flex flex-col justify-between">
+                        <div className="max-w-full sm:max-w-[50%] h-full flex flex-col justify-between items-end">
                             <h3 className="text-3xl">Amper Foods</h3>
-                            <p className="my-5">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
+                            <p className="my-5 text-right">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
                             <div className="flex gap-5 justify-center sm:gap-7 sm:justify-start">
                                 <Button url="/curriculo" colored={true} text="Demo" />
                                 <Button url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />

@@ -5,9 +5,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import React, { useEffect, useState } from "react";
-import { Button } from "./Button";
-import { MdEmail, MdOpacity } from "react-icons/md";
+import { useEffect, useState } from "react";
+import { MdEmail } from "react-icons/md";
 import { db } from "../services/firebaseConfig";
 import { collection, doc, setDoc, Timestamp } from "firebase/firestore"; 
 

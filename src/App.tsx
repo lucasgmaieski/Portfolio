@@ -7,9 +7,7 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Link } from "react-scroll";
-import { BsArrowUpCircle, BsFillPersonLinesFill } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { PiListChecksBold, PiProjectorScreenChartDuotone } from "react-icons/pi";
+import { BsArrowUpCircle } from "react-icons/bs";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
