@@ -25,7 +25,7 @@ export const Presentation = () => {
                 </div>
             </div>
             <div className="max-w-md w-4/5 md:w-2/5">
-                <img src="./src/assets/lucas-png-1024x1024.png" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
+                <img src="/assets/lucas-png-1024x1024.png" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
             </div>
         </section>
     );

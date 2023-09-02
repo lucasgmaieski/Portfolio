@@ -12,7 +12,7 @@ export const Projects = () => {
                 <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l">
                     <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                         <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
-                            <img src="./src/assets/amper-foods-preview.png" alt="Preview projeto Amper Foods" />
+                            <img src="/assets/amper-foods-preview.png" alt="Preview projeto Amper Foods" />
                         </div>
                         <div className="max-w-full sm:max-w-[50%] h-full flex flex-col justify-between">
                             <h3 className="text-3xl">Amper Foods</h3>
@@ -27,7 +27,7 @@ export const Projects = () => {
                 <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-r">
                     <div className="flex items-center m-1 p-8 sm:pr-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                         <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500 sm:order-2">
-                            <img src="./src/assets/portfolio-lucas-preview.png" alt="Preview projeto Amper Foods" />
+                            <img src="/assets/portfolio-lucas-preview.png" alt="Preview projeto Amper Foods" />
                         </div>
                         <div className="max-w-full sm:max-w-[50%] h-full flex flex-col justify-between items-end">
                             <h3 className="text-3xl">Amper Foods</h3>
@@ -42,7 +42,7 @@ export const Projects = () => {
                 <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l">
                     <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                         <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
-                            <img src="./src/assets/sayit-preview.png" alt="Preview projeto Amper Foods" />
+                            <img src="/assets/sayIt-preview.png" alt="Preview projeto Amper Foods" />
                         </div>
                         <div className="max-w-full sm:max-w-[50%] h-full flex flex-col justify-between">
                             <h3 className="text-3xl">Amper Foods</h3>

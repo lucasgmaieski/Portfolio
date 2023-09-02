@@ -46,7 +46,7 @@ function App() {
       
       <footer className="text-center">
         <div className="max-w-[130px] m-auto">
-          <img src="./src/assets/lgm-logo-tp.png" alt="Logotipo Lucas Maieski" />
+          <img src="/assets/lgm-logo-tp.png" alt="Logotipo Lucas Maieski" />
         </div>
         <p>Lucas Maieski &copy; 2023 - Todos os direitos reservados.</p>
       </footer>
