@@ -15,6 +15,13 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (!(target.classList.contains('menu-mobile') || target.closest('.menu-mobile')) && isMenuOpen) {
+          setIsMenuOpen(false);
+        }
+    } )
+
     return (
         <header id="topo" className="w-full py-2 px-2 items-center bg-gradient-to-b from-primarylight via-primarylight to-primarylight/95  dark:bg-gradient-to-b dark:from-primarydark dark:via-primarydark dark:to-primarydark/95 fixed z-50 before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-r before:from-themecolor/0 before:via-themecolor/50 before:to-themecolor/0 before:-bottom-0 before:left-0 ">
             <div className="flex justify-between max-w-5xl m-auto">
@@ -67,7 +74,7 @@ export const Header = () => {
                         </ul>
                     </div>
                 
-                    <div className="block top-1/2 md:hidden"><FiMenu className={`w-[32px] h-[32px] stroke-[3px] cursor-pointer text-black dark:text-white hover:text-themecolor dark:hover:text-themecolor focus:border-none focus:outline-none ${isMenuOpen ? 'text-themecolor dark:text-themecolor' : ''}`} onClick={toggleMenu} tabIndex={0}/></div>
+                    <div className="block top-1/2 md:hidden"><FiMenu className={`w-[32px] h-[32px] stroke-[3px] cursor-pointer text-black dark:text-white hover:text-themecolor dark:hover:text-themecolor focus:border-none focus:outline-none ${isMenuOpen ? 'text-themecolor dark:text-themecolor' : ''} menu-mobile`} onClick={toggleMenu} tabIndex={0}/></div>
                 </nav>
             </div>
         </header>
