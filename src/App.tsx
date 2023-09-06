@@ -8,6 +8,8 @@ import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Link } from "react-scroll";
 import { BsArrowUpCircle } from "react-icons/bs";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,6 +23,8 @@ function App() {
   };
 
   useEffect(()=> {
+    Aos.init();
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

@@ -63,12 +63,12 @@ export const Contact = () => {
     return (
         <div className="pb-10 px-2 md:pb-20 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%] relative">
             <section className="max-w-5xl m-auto" id="contact">
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
                     <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Contato</h2>
                 </div>
-                <p className="text-center my-5">Tem um desafio para mim? Fique a vontade para me enviar uma mensagem</p>
+                <p className="text-center my-8">Tem um desafio para mim? Fique a vontade para me enviar uma mensagem</p>
                 <div className="flex gap-8 px-1 items-start flex-col md:flex-row relative z-10">
-                    <form onSubmit={handleSubmit(handleForm)} className={`w-full md:w-1/2 flex flex-col gap-2 relative `}>
+                    <form onSubmit={handleSubmit(handleForm)} className={`w-full md:w-1/2 flex flex-col gap-2 relative `} data-aos="fade-right" data-aos-duration="1000">
                         <label htmlFor="name">
                             Nome*:
                             <div className="bg-gradient-to-r from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-95%">
@@ -110,7 +110,7 @@ export const Contact = () => {
                             <p className="text-lg text-center text-green-500">Obrigado por enviar sua mensagem!</p>
                         }
                     </form>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <Link to={'mailto:lucasgrigol@gmail.com'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineMail className="text-themecolor text-4xl"/>lucasgrigol@gmail.com</Link>
                         <Link to={'https://www.linkedin.com/in/lucasgmaieski/'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineLinkedin className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
                         <Link to={'https://github.com/lucasgmaieski'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiFillGithub className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
