@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primarydark: '#171717',
+        primarydark: '#000',
         secondarydark: '#272727',
         themecolor: 'rgb(var(--theme-color), <alpha-value>)',
         primarylight: '#fafaf9',

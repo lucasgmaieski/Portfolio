@@ -2,7 +2,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { useTheme } from "../hooks/useTheme";
 import { useState } from "react";
-
+import { BiSolidUpArrowAlt } from 'react-icons/bi'
 
 export const About = () => {
     const { themeColor ,setThemeColor } = useTheme();
@@ -37,8 +37,8 @@ export const About = () => {
                     </div>
                     <div className="max-w-xs w-full h-auto relative max-[460px]:overflow-hidden" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="230">
                        <FaReact className={`svg-about text-themecolor z-10 relative ${loadingThemeColor ? 'animate-spin-slow animate-once animate-duration-1000' : ''}`}/>
-                       <div className="absolute w-1/3 h-1/3 translate-y-1/2 -translate-x-1/2 rounded-full bg-themecolor/80 bottom-1/2 left-1/2 z-20 blur-2xl animate-pulse cursor-pointer" title="Clique para mudar a cor" onClick={toggleColor}></div>
-                       <p>Click no botão!</p>
+                       <div id="btn-change-theme-color" className="absolute w-1/3 h-1/3 translate-y-1/2 -translate-x-1/2 rounded-full bg-themecolor/80 bottom-1/2 left-1/2 z-20 blur-2xl animate-pulse cursor-pointer" title="Clique para mudar a cor" onClick={toggleColor}></div>
+                       <p className="text-themecolor justify-center flex items-top"><BiSolidUpArrowAlt className="text-3xl animate-bounce"/> Click no botão!</p>
                     </div>
                 </div>
             </section>

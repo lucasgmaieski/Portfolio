@@ -47,8 +47,8 @@ export const Header = () => {
                         </li>
                     </ul>
                     <div>
-                        <FiSun className="w-[28px] h-[28px] cursor-pointer hidden text-white dark:block" onClick={()=>setTheme("dark")} tabIndex={0}/>
-                        <MdDarkMode className="w-[28px] h-[28px] cursor-pointer block text-black dark:hidden" onClick={()=>setTheme("light")} tabIndex={0}/>
+                        <FiSun id="theme-light" className="w-[28px] h-[28px] cursor-pointer hidden text-white dark:block" onClick={()=>setTheme("dark")} tabIndex={0}/>
+                        <MdDarkMode id="theme-dark" className="w-[28px] h-[28px] cursor-pointer block text-black dark:hidden" onClick={()=>setTheme("light")} tabIndex={0}/>
                     </div>
                 
                     <div className= {`bg-gradient-to-r from-themecolor via-themecolor/50 to-themecolor/10 fixed top-1/2 -translate-y-1/2 md:hidden flex items-center justify-center right-0  ${isMenuOpen ? '-translate-x-1' : 'translate-x-11'} transition duration-500`} >

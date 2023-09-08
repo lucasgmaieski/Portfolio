@@ -1,10 +1,9 @@
 import { Button } from "./Button";
 import Typewriter from "typewriter-effect";
 
-
 export const Presentation = () => {
     return (
-        <div className="py-16 px-2 md:py-28 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%]">
+        <div className="py-16 px-2 md:py-28 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%] overflow-hidden">
             <section className="max-w-5xl m-auto flex gap-8 items-center flex-col md:flex-row z-10 relative" id="presentation">
                 <div className="md:w-3/5" data-aos="fade-right" data-aos-duration="1000">
                     <h1 className="text-themecolor font-extrabold flex flex-col gap-2 ">
@@ -21,8 +20,8 @@ export const Presentation = () => {
                     </h1>
                     <p className="my-5">Bem vindo ao meu portfólio! aqui eu apresento meus projetos, habilidades e informações para contato.</p>
                     <div className="flex gap-3">
-                        <Button url="/curriculo" colored={true} text="Currículo" />
-                        <Button url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Linkedin" />
+                        <Button id="curriculo" url="/curriculo" colored={true} text="Currículo" />
+                        <Button id="linkedin" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Linkedin" />
                     </div>
                 </div>
                 <div className="max-w-md w-4/5 md:w-2/5" data-aos="fade-left" data-aos-duration="1000">

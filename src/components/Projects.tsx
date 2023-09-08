@@ -19,8 +19,8 @@ export const Projects = () => {
                                 <h3 className="text-3xl">Amper Foods</h3>
                                 <p className="my-5">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
                                 <div className="flex gap-5 justify-center sm:gap-7 sm:justify-start">
-                                    <Button url="/curriculo" colored={true} text="Demo" />
-                                    <Button url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
+                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
                                 </div>
                             </div>
                         </div>
@@ -34,8 +34,8 @@ export const Projects = () => {
                                 <h3 className="text-3xl">Página Web</h3>
                                 <p className="my-5">Página web pessoal para mostrar meus projetos. Desenvolvida com React, Typescript, TailwindCSS e layout criado no Figma.</p>
                                 <div className="flex gap-5 justify-center sm:gap-7 sm:justify-end">
-                                    <Button url="/curriculo" colored={true} text="Demo" />
-                                    <Button url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
+                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
                                 </div>
                             </div>
                         </div>
@@ -49,8 +49,8 @@ export const Projects = () => {
                                 <h3 className="text-3xl">SayIt</h3>
                                 <p className="my-5">Aplicação web para aprendizado de inglês usando a técnica de repetição espaçada. Está sendo desenvolvida com Next JS, Typescript,  Styled-Components e Firebase.</p>
                                 <div className="flex gap-5 justify-center sm:gap-7 sm:justify-start">
-                                    <Button url="/curriculo" colored={true} text="Demo" />
-                                    <Button url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
+                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
                                 </div>
                             </div>
                         </div>

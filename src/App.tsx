@@ -12,6 +12,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
+  
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
