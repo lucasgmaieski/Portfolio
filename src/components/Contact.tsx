@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { ImSpinner2 } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
+import { FaPaperPlane } from "react-icons/fa6";
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -110,15 +111,18 @@ export const Contact = () => {
                             <p className="text-lg text-center text-green-500">Obrigado por enviar sua mensagem!</p>
                         }
                     </form>
-                    <div data-aos="fade-left" data-aos-duration="1000">
-                        <Link to={'mailto:lucasgrigol@gmail.com'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineMail className="text-themecolor text-4xl"/>lucasgrigol@gmail.com</Link>
-                        <Link to={'https://www.linkedin.com/in/lucasgmaieski/'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineLinkedin className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
-                        <Link to={'https://github.com/lucasgmaieski'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiFillGithub className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
-                        <Link to={'https://wa.me/5546991333202'} target="_blank" className="font-bold flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><BsWhatsapp className="text-themecolor text-4xl p-[2px]"/> (46) 99133 3202</Link>
+                    <div className="relative w-full md:w-fit" data-aos="fade-left" data-aos-duration="1000">
+                        <Link to={'mailto:lucasgrigol@gmail.com'} target="_blank" className="font-bold w-fit flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineMail className="text-themecolor text-4xl"/>lucasgrigol@gmail.com</Link>
+                        <Link to={'https://www.linkedin.com/in/lucasgmaieski/'} target="_blank" className="font-bold w-fit flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiOutlineLinkedin className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
+                        <Link to={'https://github.com/lucasgmaieski'} target="_blank" className="font-bold w-fit flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><AiFillGithub className="text-themecolor text-4xl"/> /lucasgmaieski</Link>
+                        <Link to={'https://wa.me/5546991333202'} target="_blank" className="font-bold w-fit flex gap-1 items-center mb-2 duration-500 transition-transform hover:translate-x-3 hover:text-themecolor" title=""><BsWhatsapp className="text-themecolor text-4xl p-[2px]"/> (46) 99133 3202</Link>
+                        <div className="absolute flex md:hidden justify-end w-full text-themecolor/5 text-end right-0 top-[50%] -translate-y-1/2 z-[-1]">
+                            <FaPaperPlane className="w-[20vw] h-[20vw] min-w-[150px] min-h-[150px] mr-[5%] my-1 text-themecolor/5"/>
+                        </div>
                     </div>
                 </div>
             </section>
-            <div className="absolute hidden md:block text-themecolor/5 text-8xl left-0 top-[50%] -translate-y-1/2 z-[0]">
+            <div className="absolute hidden md:flex justify-between w-full text-themecolor/5 text-8xl left-0 top-[50%] -translate-y-1/2 z-[0]">
                 <MdEmail className="w-[20vw] h-[20vw] mx-2 my-1"/>
             </div>
         </div>
