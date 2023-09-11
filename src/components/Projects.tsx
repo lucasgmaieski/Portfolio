@@ -1,5 +1,6 @@
 import { Button } from "./Button";
-import { PiProjectorScreenChartDuotone } from "react-icons/pi";
+import { PiGithubLogoBold, PiProjectorScreenChartDuotone } from "react-icons/pi";
+import { BsWindowFullscreen } from "react-icons/bs";
 
 
 export const Projects = () => {
@@ -18,9 +19,9 @@ export const Projects = () => {
                             <div className="max-w-full text-center sm:text-left sm:max-w-[50%] h-full flex flex-col justify-between">
                                 <h3 className="text-3xl">Amper Foods</h3>
                                 <p className="my-5">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
-                                <div className="flex gap-5 justify-center sm:gap-7 sm:justify-start">
-                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
-                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-start">
+                                    <Button id="demo" url="https://amper-foods.vercel.app/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                    <Button id="codigo" url="https://github.com/lucasgmaieski/AmperFoods" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
                                 </div>
                             </div>
                         </div>
@@ -33,9 +34,9 @@ export const Projects = () => {
                             <div className="max-w-full text-center sm:text-right sm:max-w-[50%] h-full flex flex-col justify-between">
                                 <h3 className="text-3xl">Página Web</h3>
                                 <p className="my-5">Página web pessoal para mostrar meus projetos. Desenvolvida com React, Typescript, TailwindCSS e layout criado no Figma.</p>
-                                <div className="flex gap-5 justify-center sm:gap-7 sm:justify-end">
-                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
-                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-end">
+                                    <Button id="demo" url="/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                    <Button id="codigo" url="https://github.com/lucasgmaieski/Portfolio" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
                                 </div>
                             </div>
                         </div>
@@ -48,16 +49,16 @@ export const Projects = () => {
                             <div className="max-w-full text-center sm:text-left sm:max-w-[50%] h-full flex flex-col justify-between">
                                 <h3 className="text-3xl">SayIt</h3>
                                 <p className="my-5">Aplicação web para aprendizado de inglês usando a técnica de repetição espaçada. Está sendo desenvolvida com Next JS, Typescript,  Styled-Components e Firebase.</p>
-                                <div className="flex gap-5 justify-center sm:gap-7 sm:justify-start">
-                                    <Button id="demo" url="/curriculo" colored={true} text="Demo" />
-                                    <Button id="codigo" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Código" />
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-start">
+                                    <Button id="demo" url="/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                    <Button id="codigo" url="" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div className="absolute hidden md:block text-themecolor/5 top-[50%] -translate-y-1/2 z-[0]">
+            <div className="absolute hidden md:block text-themecolor/5 dark:text-themecolor/[15%] top-[50%] -translate-y-1/2 z-[0]">
                 <PiProjectorScreenChartDuotone className="w-[20vw] h-[20vw] mx-2 my-1"/>
             </div>
         </div>

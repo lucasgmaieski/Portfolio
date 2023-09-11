@@ -53,23 +53,23 @@ export const Header = () => {
                 
                     <div className= {`bg-gradient-to-r from-themecolor via-themecolor/50 to-themecolor/10 fixed top-1/2 -translate-y-1/2 md:hidden flex items-center justify-center right-0  ${isMenuOpen ? '-translate-x-1' : 'translate-x-11'} transition duration-500`} >
                         <ul className={`text-themecolor font-semibold flex flex-col my-1 py-1 bg-primarylight/80 dark:bg-primarydark/80 transition duration-300 ${isMenuOpen ? 'translate-x-1' : 'translate-x-2'}`}>
-                            <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400" title="Home">
-                                <Link to="presentation" smooth={true} duration={1000} offset={-120} tabIndex={0}><AiFillHome className="w-[28px] h-[28px] mx-3 my-2"/> </Link>
+                            <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400" >
+                                <Link to="presentation" smooth={true} duration={1000} offset={-120} tabIndex={0}><AiFillHome className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/> </Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="about" smooth={true} duration={1000} offset={-120} tabIndex={0}><BsFillPersonLinesFill className="w-[28px] h-[28px] mx-3 my-2"/></Link>
+                                <Link to="about" smooth={true} duration={1000} offset={-120} tabIndex={0}><BsFillPersonLinesFill className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="projects" smooth={true} duration={1000} offset={-120} tabIndex={0}><PiProjectorScreenChartDuotone className="w-[28px] h-[28px] mx-3 my-2"/></Link>
+                                <Link to="projects" smooth={true} duration={1000} offset={-120} tabIndex={0}><PiProjectorScreenChartDuotone className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="skills" smooth={true} duration={1000} offset={-120} tabIndex={0}><PiListChecksBold className="w-[28px] h-[28px] mx-3 my-2"/></Link>
+                                <Link to="skills" smooth={true} duration={1000} offset={-120} tabIndex={0}><PiListChecksBold className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="contact" smooth={true} duration={1000} offset={-120} tabIndex={0}><MdEmail className="w-[28px] h-[28px] mx-3 my-2"/></Link>
+                                <Link to="contact" smooth={true} duration={1000} offset={-120} tabIndex={0}><MdEmail className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/></Link>
                             </li>
                             <li className="opacity-90 hover:opacity-100 hover:text-themecolor-400">
-                                <Link to="topo" smooth={true} duration={1000} offset={-120} tabIndex={0}><BsArrowUpCircle className="w-[28px] h-[28px] mx-3 my-2"/></Link>
+                                <Link to="topo" smooth={true} duration={1000} offset={-120} tabIndex={0}><BsArrowUpCircle className="cursor-pointer w-[28px] h-[28px] mx-3 my-2"/></Link>
                             </li>
                         </ul>
                     </div>

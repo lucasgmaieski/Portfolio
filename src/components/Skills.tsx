@@ -63,7 +63,7 @@ export const Skills = () => {
                   ))}
               </div>
           </section>
-          <div className="absolute hidden md:block text-themecolor/5 top-[50%] -translate-y-1/2 z-[0]">
+          <div className="absolute hidden md:block text-themecolor/5 dark:text-themecolor/[15%] top-[50%] -translate-y-1/2 z-[0]">
               <PiListChecksBold className="w-[20vw] h-[20vw] mx-2 my-1"/>
           </div>
         </div>
