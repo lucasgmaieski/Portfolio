@@ -10,54 +10,46 @@ import { Link } from "react-scroll";
 import { BsArrowUpCircle } from "react-icons/bs";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Footer } from "./components/Footer";
 
 function App() {
-  
-  const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
-  const handleScroll = () => {
-    if(window.scrollY > 200) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  useEffect(()=> {
-    Aos.init();
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  }, [])
-
-  return (
-    <div className="w-full bg-primarylight text-black dark:bg-primarydark dark:text-white relative" id="topo">
-      <Header />
-      
-      <main className="h-fit pt-24 z-10">
-        
-        <Presentation />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        {isVisible && 
-          <Link to="topo" smooth={true} duration={1000} spy={true} spyThrottle={500} offset={-70} tabIndex={0} className=""><BsArrowUpCircle className="fixed z-20 bottom-6 text-themecolor right-3 w-[36px] h-[36px] mx-2 my-1 rounded-full bg-primarylight dark:bg-primarydark shadow-primarydark dark:shadow-primarylight animate-bounce hidden md:block cursor-pointer"/></Link>
+    const handleScroll = () => {
+        if(window.scrollY > 200) {
+        setIsVisible(true);
+        } else {
+        setIsVisible(false);
         }
-      </main>
-      
-      <footer className="text-center">
-        <div className="bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%]">
-          <div className="max-w-[130px] m-auto">
-            <img src="/assets/lgm-logo-tp.png" alt="Logotipo Lucas Maieski" />
-          </div>
-          <p>Lucas Maieski &copy; 2023 - Todos os direitos reservados.</p>
+    };
+
+    useEffect(()=> {
+        Aos.init();
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
+    return (
+        <div className="w-full bg-primarylight text-black dark:bg-primarydark dark:text-white relative" id="topo">
+            <Header />
+            
+            <main className="h-fit pt-24 z-10">
+                <Presentation />
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+                {isVisible && 
+                    <Link to="topo" smooth={true} duration={1000} spy={true} spyThrottle={500} offset={-70} tabIndex={0} className=""><BsArrowUpCircle className="fixed z-20 bottom-6 text-themecolor right-3 w-[36px] h-[36px] mx-2 my-1 rounded-full bg-primarylight dark:bg-primarydark shadow-primarydark dark:shadow-primarylight animate-bounce hidden md:block cursor-pointer"/></Link>
+                }
+            </main>
+            
+            <Footer />
         </div>
-      </footer>
-    </div>
-  )
+    )
 }
 
 export default App

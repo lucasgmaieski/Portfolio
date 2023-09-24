@@ -6,6 +6,7 @@ import { PiProjectorScreenChartDuotone, PiListChecksBold } from "react-icons/pi"
 import { useTheme } from "../hooks/useTheme";
 import { Link } from   "react-scroll";
 import { useState } from "react";
+import { LogoSvg } from "./LogoSvg";
 
 export const Header = () => {
     const { setTheme } = useTheme();
@@ -23,10 +24,10 @@ export const Header = () => {
     } )
 
     return (
-        <header id="topo" className="w-full py-2 px-2 items-center bg-gradient-to-b from-primarylight via-primarylight to-primarylight/95  dark:bg-gradient-to-b dark:from-primarydark dark:via-primarydark dark:to-primarydark/95 fixed z-50 before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-r before:from-themecolor/0 before:via-themecolor/50 before:to-themecolor/0 before:-bottom-0 before:left-0 ">
+        <header id="topo" className="w-full p-4 items-center bg-gradient-to-b from-primarylight via-primarylight to-primarylight/95  dark:bg-gradient-to-b dark:from-primarydark dark:via-primarydark dark:to-primarydark/95 fixed z-50 before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-r before:from-themecolor/0 before:via-themecolor/50 before:to-themecolor/0 before:-bottom-0 before:left-0 ">
             <div className="flex justify-between max-w-5xl m-auto">
-                <div className="max-w-[100px]">
-                    <img src="/assets/lgm-logo-tp.png" alt="logo" tabIndex={0}/>
+                <div className="">
+                    <LogoSvg />
                 </div>
                 <nav className="flex flex-row gap-8 items-center">
                     <ul className="gap-8 text-black  dark:text-white font-semibold hidden md:flex">
