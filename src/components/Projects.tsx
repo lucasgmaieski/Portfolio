@@ -11,6 +11,20 @@ export const Projects = () => {
                     <h2 className="text-4xl font-semibold text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Projetos</h2>
                 </div>
                 <div className="flex gap-8 mt-10 px-1 items-center flex-col relative z-10">
+                    <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-r" data-aos="fade-right" data-aos-duration="1000">
+                        <div className="flex items-center m-1 p-8 sm:pr-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
+                            <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500 sm:order-2">
+                                <img src="/assets/votacao-camara-preview.png" alt="Preview projeto Amper Foods" />
+                            </div>
+                            <div className="max-w-full text-center sm:text-right sm:max-w-[50%] h-full flex flex-col justify-between">
+                                <h3 className="text-3xl">Votação Câmara</h3>
+                                <p className="my-5">Aplicação web para acompanhamento das sessões e votação de projetos da câmara de vereadores. Desenvolvida com Next JS, Typescript, TailwindCSS, Node JS e WebSocket seguindo layout no Figma.</p>
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-end">
+                                    <Button id="demo" url="/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l" data-aos="fade-left" data-aos-duration="1000">
                         <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                             <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
@@ -29,7 +43,7 @@ export const Projects = () => {
                     <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-r" data-aos="fade-right" data-aos-duration="1000">
                         <div className="flex items-center m-1 p-8 sm:pr-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                             <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500 sm:order-2">
-                                <img src="/assets/portfolio-lucas-preview.png" alt="Preview projeto Amper Foods" />
+                                <img src="/assets/portfolio-lucas-preview2.png" alt="Preview projeto Amper Foods" />
                             </div>
                             <div className="max-w-full text-center sm:text-right sm:max-w-[50%] h-full flex flex-col justify-between">
                                 <h3 className="text-3xl">Página Web</h3>
@@ -56,6 +70,35 @@ export const Projects = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-r" data-aos="fade-left" data-aos-duration="1000">
+                        <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
+                            <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500 sm:order-2">
+                                <img src="/assets/marcosul-preview.png" alt="Preview site Marcosul Distribuidora" />
+                            </div>
+                            <div className="max-w-full text-center sm:text-right sm:max-w-[50%] h-full flex flex-col justify-between">
+                                <h3 className="text-3xl">Marcosul Distribuidora</h3>
+                                <p className="my-5">Site institucional da empresa Marcosul Distribuidora. Desenvolvido tema no wordpress utilizando html, css, jquery e php.</p>
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-end">
+                                    <Button id="demo" url="https://marcosuldistribuidora.com.br/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l" data-aos="fade-left" data-aos-duration="1000">
+                        <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
+                            <div className="max-w-full sm:max-w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
+                                <img src="/assets/polidec-preview.png" alt="Preview site Polidec" />
+                            </div>
+                            <div className="max-w-full text-center sm:text-left sm:max-w-[50%] h-full flex flex-col justify-between">
+                                <h3 className="text-3xl">Polidec</h3>
+                                <p className="my-5">Site institucional da empresa Polidec. Desenvolvido tema no wordpress utilizando html, css, jquery e php.</p>
+                                <div className="flex justify-center gap-2 sm:gap-5 sm:justify-start">
+                                    <Button id="demo" url="https://polidec.ind.br/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             <div className="absolute hidden md:block text-themecolor/5 dark:text-themecolor/[15%] top-[50%] -translate-y-1/2 z-[0]">

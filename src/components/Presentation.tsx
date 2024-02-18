@@ -28,7 +28,7 @@ export const Presentation = () => {
                 {/* <div className="bg-gradient-to-t from-themecolor/40 from-0% via-themecolor/20  to-themecolor/5 to-80%  max-w-md w-4/5 md:w-2/5" data-aos="fade-left" data-aos-duration="1000"> */}
                 <div className="group bg-gradient-to-t from-themecolor/40 from-0% via-themecolor/20 via-20% to-themecolor/0 to-100% p-1 max-w-md w-4/5 md:w-2/5" data-aos="fade-left" data-aos-duration="1000">
                     <div className="bg-primarylight dark:bg-primarydark">
-                        <img className="relative z-10 group-hover:-translate-y-2 duration-500 transition-all ease-in-out" src="/assets/lucas-png-1024x1024.png" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
+                        <img className="relative z-10 group-hover:-translate-y-2 duration-500 transition-all ease-in-out" src="/assets/lucas11.png" alt="Imagem do desenvolvedor Lucas Maieski" title="Olá, tudo bem?"/>
                         <div className="absolute blur-2xl left-0 top-0 z-0 w-full h-3/5 before:content-[''] before:absolute before:left-0 before:z-0 before:w-full before:h-full before:bg-gradient-to-r before:from-themecolor/0 before:from-20% before:via-themecolor/30  before:to-themecolor/0 before:to-80% opacity-70 group-hover:opacity-90 duration-3000 transition-all ease-in-out"></div>
                         <div className="absolute blur-sm left-0 bottom-0 z-0 w-full h-2/5 before:content-[''] before:absolute before:left-0 before:z-0 before:w-full before:h-full before:bg-gradient-to-t before:from-themecolor/30 before:from-0% before:via-themecolor/20 before:to-themecolor/0 before:to-100% opacity-70 group-hover:opacity-90 duration-3000 transition-all ease-in-out"></div>
                     </div>
