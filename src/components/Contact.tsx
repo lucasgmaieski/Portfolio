@@ -65,7 +65,7 @@ export const Contact = () => {
         <div className="pb-10 px-2 md:pb-20 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%] relative overflow-hidden">
             <section className="max-w-5xl m-auto" id="contact">
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Contato</h2>
+                    <h2 className="text-4xl font-semibold text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Contato</h2>
                 </div>
                 <p className="text-center my-8">Tem um desafio para mim? Fique a vontade para me enviar uma mensagem</p>
                 <div className="flex gap-12 px-1 items-start flex-col md:flex-row md:gap-8 relative z-10">

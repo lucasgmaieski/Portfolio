@@ -26,7 +26,7 @@ export const Header = () => {
     return (
         <header id="topo" className="w-full p-4 items-center bg-gradient-to-b from-primarylight via-primarylight to-primarylight/95  dark:bg-gradient-to-b dark:from-primarydark dark:via-primarydark dark:to-primarydark/95 fixed z-50 before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-r before:from-themecolor/0 before:via-themecolor/50 before:to-themecolor/0 before:-bottom-0 before:left-0 ">
             <div className="flex justify-between max-w-5xl m-auto">
-                <div className="">
+                <div className="group">
                     <LogoSvg />
                 </div>
                 <nav className="flex flex-row gap-8 items-center">

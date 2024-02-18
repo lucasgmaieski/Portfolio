@@ -8,7 +8,7 @@ export const Projects = () => {
         <div className="pb-10 px-2 md:pb-24 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%] relative overflow-hidden">
             <section className="max-w-5xl m-auto" id="projects">
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Projetos</h2>
+                    <h2 className="text-4xl font-semibold text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Projetos</h2>
                 </div>
                 <div className="flex gap-8 mt-10 px-1 items-center flex-col relative z-10">
                     <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l" data-aos="fade-left" data-aos-duration="1000">

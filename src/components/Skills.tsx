@@ -45,7 +45,7 @@ export const Skills = () => {
         <div className="pb-10 px-2 md:pb-24 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-themecolor/[3%] via-themecolor/[1%] to-themecolor/[1%] relative overflow-hidden">
           <section className="max-w-5xl m-auto" id="skills">
               <div data-aos="zoom-in" data-aos-duration="1000">
-                  <h2 className="text-4xl text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Habilidades</h2>
+                  <h2 className="text-4xl font-semibold text-bold m-auto relative w-fit before:content-[''] before:absolute before:w-full before:h-1 before:bg-gradient-to-r from-themecolor/0 via-themecolor to-themecolor/0 before:-bottom-1.5 before:left-0">Habilidades</h2>
               </div>
               <div className="mt-7 px-1 grid grid-cols-4 grid-flow-row gap-4 sm:grid-cols-7 max-[450px]:gap-2 max-[450px]:grid-cols-3 relative z-10">
                   { ListSkills.map((item, key)=>(
