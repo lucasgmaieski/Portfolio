@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="w-fit m-auto mb-6 group">
                     <LogoSvg />
                 </div>
-                <p>Lucas Maieski &copy; 2023 - Todos os direitos reservados.</p>
+                <p>Lucas Maieski &copy; {new Date().getFullYear()} - Todos os direitos reservados.</p>
             </div>
         </footer>
     );

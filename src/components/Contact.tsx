@@ -69,7 +69,7 @@ export const Contact = () => {
                 </div>
                 <p className="text-center my-8">Tem um desafio para mim? Fique a vontade para me enviar uma mensagem</p>
                 <div className="flex gap-12 px-1 items-start flex-col md:flex-row md:gap-8 relative z-10">
-                    <form onSubmit={handleSubmit(handleForm)} className={`w-full md:w-1/2 flex flex-col gap-2 relative `} data-aos="fade-right" data-aos-duration="1000">
+                    <form onSubmit={handleSubmit(handleForm)} className={`w-full md:w-2/3 flex flex-col gap-2 relative `} data-aos="fade-right" data-aos-duration="1000">
                         <label htmlFor="name">
                             Nome*:
                             <div className="bg-gradient-to-r from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-95%">

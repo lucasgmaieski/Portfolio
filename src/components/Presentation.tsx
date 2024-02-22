@@ -21,7 +21,7 @@ export const Presentation = () => {
                     </h1>
                     <p className="my-5">Bem vindo ao meu portfólio! aqui eu apresento meus projetos, habilidades e informações para contato.</p>
                     <div className="flex gap-2 max-[300px]:flex-col sm:gap-3 ">
-                        <Button id="curriculo" url="/curriculo" colored={true} text="Currículo"><BiCloudDownload className="text-2xl"/></Button>
+                        <Button id="curriculo" url="/assets/Currículo-Lucas-2024.pdf" colored={true} text="Currículo"><BiCloudDownload className="text-2xl"/></Button>
                         <Button id="linkedin" url="https://www.linkedin.com/in/lucasgmaieski/" colored={false} text="Linkedin"><AiOutlineLinkedin className="text-2xl"/></Button>
                     </div>
                 </div>

@@ -33,7 +33,7 @@ export const About = () => {
                 </div>
                 <div className="flex gap-8 mt-5 px-1 items-center flex-col md:flex-row relative z-10">
                     <div className="mt-5 md:w-3/5 md:mt-0 text-base" data-aos="fade-right" data-aos-offset="80" data-aos-duration="1000">
-                        <p className="mb-3">Meu primeiro contato com a programação foi em 2014, durante a faculdade, e confesso que não foi amor à primeira vista, rs. No entanto, em janeiro de 2022, reencontrei a programação web, e foi quando encontrei minha verdadeira paixão e me dedico a ela em tempo integral.</p>
+                        <p className="mb-3">Meu primeiro contato com a programação foi em 2014, durante a faculdade, e confesso que não foi amor à primeira vista, rs. No entanto, em janeiro de 2022, reencontrei a programação web, e foi então que descobri minha verdadeira paixão e me dedico a ela em tempo integral.</p>
                         <p className="mb-3">Atualmente, trabalho como desenvolvedor front-end, criando temas para WordPress, utilizando tecnologias como HTML, CSS, Scss, JavaScript, PHP, jQuery, Bootstrap e Git. Além disso, estou profundamente envolvido em meus projetos pessoais, nos quais venho aprimorando minhas habilidades com NextJS, ReactJS, TypeScript, Styled-Components e TailwindCSS.</p>
                         <p className="mb-3">Procuro estar sempre a par das novidades para criar interfaces seguindo conceitos modernos e avançados, focadas na usabilidade e experiência do usuário.</p>
                     </div>
