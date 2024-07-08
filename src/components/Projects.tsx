@@ -28,14 +28,14 @@ export const Projects = () => {
                     <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l" data-aos="fade-left" data-aos-duration="1000">
                         <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                             <div className="max-w-full sm:w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
-                                <img src="/assets/amper-foods-preview.png" alt="Preview projeto Amper Foods" />
+                                <img src="/assets/sonho-auto-veiculos-preview.png" alt="Preview projeto Amper Foods" />
                             </div>
                             <div className="max-w-full text-center sm:text-left sm:w-[50%] h-full flex flex-col justify-between">
-                                <h3 className="text-3xl">Amper Foods</h3>
-                                <p className="my-5">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
+                                <h3 className="text-3xl">Sonho auto veículos</h3>
+                                <p className="my-5">Site institucional de uma revendedora de veículos. Desenvolvido com Next JS, Typescript, TailwindCSS, GraphQL e Wordpress como CMS.</p>
                                 <div className="flex justify-center gap-2 sm:gap-5 sm:justify-start">
-                                    <Button id="demo" url="https://amper-foods.vercel.app/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
-                                    <Button id="codigo" url="https://github.com/lucasgmaieski/AmperFoods" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
+                                    <Button id="demo" url="/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                    <Button id="codigo" url="https://github.com/lucasgmaieski/sonho-auto-veiculos" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
                                 </div>
                             </div>
                         </div>
@@ -58,14 +58,14 @@ export const Projects = () => {
                     <div className="group bg-gradient-to-t from-themecolor from-0% via-themecolor/50 via-25% to-themecolor/0 to-55%  sm:bg-gradient-to-l" data-aos="fade-left" data-aos-duration="1000">
                         <div className="flex items-center m-1 p-8 sm:pl-0 gap-10 bg-primarylight dark:bg-primarydark flex-col sm:flex-row max-[400px]:p-4">
                             <div className="max-w-full sm:w-[50%] group-hover:drop-shadow-mytheme group-hover:scale-105 transition duration-500">
-                                <img src="/assets/sayIt-preview.png" alt="Preview projeto Amper Foods" />
+                                <img src="/assets/amper-foods-preview.png" alt="Preview projeto Amper Foods" />
                             </div>
                             <div className="max-w-full text-center sm:text-left sm:w-[50%] h-full flex flex-col justify-between">
-                                <h3 className="text-3xl">Sonho auto veículos</h3>
-                                <p className="my-5">Site institucional de uma revendedora de automoveis. Está sendo desenvolvida com Next JS, Typescript, TailwindCSS e Wordpress como CMS.</p>
+                                <h3 className="text-3xl">Amper Foods</h3>
+                                <p className="my-5">Aplicação web de pedidos e entrega de comida online. Desenvolvida com React, Typescript, Styled-Components e Firebase.</p>
                                 <div className="flex justify-center gap-2 sm:gap-5 sm:justify-start">
-                                    <Button id="demo" url="/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
-                                    <Button id="codigo" url="https://github.com/lucasgmaieski/sonho-auto-veiculos" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
+                                    <Button id="demo" url="https://amper-foods.vercel.app/" colored={true} text="Demo"><BsWindowFullscreen className="text-xl"/></Button>
+                                    <Button id="codigo" url="https://github.com/lucasgmaieski/AmperFoods" colored={false} text="Código"><PiGithubLogoBold className="text-xl"/></Button>
                                 </div>
                             </div>
                         </div>

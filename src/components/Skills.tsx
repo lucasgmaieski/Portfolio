@@ -1,5 +1,5 @@
 import { ListSkills } from "../data/ListSkills";
-import { SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs, SiStyledcomponents, SiBootstrap, SiSass, SiHtml5, SiCss3, SiFirebase, SiGit, SiWordpress, SiPhp, SiFigma } from "react-icons/si"
+import { SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs, SiStyledcomponents, SiBootstrap, SiSass, SiHtml5, SiCss3, SiFirebase, SiGit, SiWordpress, SiPhp, SiFigma, SiGraphql, SiSocketdotio } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { PiListChecksBold } from "react-icons/pi";
 
@@ -37,6 +37,10 @@ export const Skills = () => {
               return <SiPhp className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             case 'SiFigma':
               return <SiFigma className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiGraphql':
+              return <SiGraphql className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
+            case 'SiSocketdotio':
+              return <SiSocketdotio className="text-themecolor text-8xl sm:text-6xl md:text-7xl lg:text-8xl -mb-6 group-hover:-translate-y-6 duration-700 transition max-[450px]:group-hover:-translate-y-5 max-[550px]:text-7xl max-[450px]:text-8xl max-[400px]:text-7xl max-[320px]:text-6xl"/>;
             default:
               return null;
           }

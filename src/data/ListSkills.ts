@@ -48,6 +48,14 @@ export const ListSkills = [
         icon: 'SiGit'
     },
     {
+        name: 'WebSocket',
+        icon: 'SiSocketdotio'
+    },
+    {
+        name: 'Graphql',
+        icon: 'SiGraphql'
+    },
+    {
         name: 'WordPress',
         icon: 'SiWordpress'
     },
